@@ -1,0 +1,245 @@
+/* 
+/////////////////////////////////////////////////////////////////////
+/// Merci d'utiliser mon code :D,                                ///               
+/// en retour je peux te demander de me suivre sur youtube (:   ///
+/// Auteur : Code_Redempteur                                   ///
+/// Youtube : https://www.youtube.com/@CodeRedempteur         ///
+////////////////////////////////////////////////////////////////
+ */
+
+/* Création du header basique */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.announcement-bar {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    z-index: 1001;
+
+}
+
+.logo {
+    font-size: 18pt;
+    font-weight: bold;
+    flex: 1;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+
+
+.icon-linkLogo,.icon-link {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 auto;
+    justify-self: center;
+}
+.icon-link .icon {
+    margin-right: 0.5rem;
+}
+
+/* Style du panier  */
+
+/* Style du button de paiement */
+.payment-button {
+    position: relative;
+    padding: 10px;
+    margin: 1rem;
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.payment-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.payment-button:hover {
+    color: #fff;
+}
+
+.payment-button:hover::before {
+    left: 0;
+}
+
+
+/* Style des bouton et du input du panier  */
+.cart-content button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.cart-content button:hover {
+    background-color: #555;
+}
+
+.cart-content input[type="number"] {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.cart-content a {
+    color: #d9534f;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.cart-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* Style des containers et de l'images du produit  */
+
+.cart-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+.cart-items-container  img {
+    height: auto;
+    width: 70px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Création du panier  */
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 1002;
+    transition: opacity 0.3s ease;
+}
+
+.cart-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-overlay.show .cart-panel {
+    transform: translateX(0);
+}
+
+.cart-content {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.close-cart {
+    margin: 1rem;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
