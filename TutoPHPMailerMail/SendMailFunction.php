@@ -21,8 +21,8 @@ function EnvoieMail($mail, $mailToSend, $Content)
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'coderredemption@gmail.com';                     //SMTP username
-    $mail->Password   = 'jwsabyixeqazbial';//SMTP password
+    $mail->Username   = 'mail@gmail.com';                     //SMTP username
+    $mail->Password   = 'mdp à configurer dans le lien commenté '; //https://myaccount.google.com/u/1/apppasswords?pli=1&rapt=AEjHL4O6JomJmLgUF8yTDFNAs-MpSu31UobOEFcv7-5l8lqEtmugBVAcQ0Kkag3POwloN6QwTxqvqgoR2ikevdl0D8SUP1DzFKk5rL0r7srqkAAx-Fef8KA //SMTP password
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
