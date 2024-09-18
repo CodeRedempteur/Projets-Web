@@ -26,7 +26,6 @@ Ce projet est sous licence [MIT](LICENSE). Vous êtes libre de l'utiliser, de le
 Si vous trouvez ce projet utile, vous pouvez me soutenir sur les plateformes suivantes :
 
 - [Patreon]([https://www.patreon.com/votre-lien](https://www.patreon.com/CodeRedempteur))
-- [Buy Me a Coffee]([https://www.buymeacoffee.com/votre-lien](https://buymeacoffee.com/coderredemy
-))
+- [Buy Me a Coffee]([https://www.buymeacoffee.com/votre-lien](https://buymeacoffee.com/coderredemy))
 
 Merci pour votre soutien et votre intérêt pour Monogame ! 🎮
