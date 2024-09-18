@@ -21,7 +21,7 @@ Ce projet est sous licence [MIT](LICENSE). Vous êtes libre de l'utiliser, de le
 
 > **Note** : Ce projet est actuellement **maintenu** et les contributions sont les bienvenues sur le discord officiel : https://discord.gg/JR3ENr5Db5 . N'hésitez pas à soumettre des issues ou des pull requests pour aider à l'amélioration continue.
 
-## ☕️ Supportez le projet
+## ☕️ Supportez les projets web (:
 
 Si vous trouvez ce projet utile, vous pouvez me soutenir sur les plateformes suivantes :
 
