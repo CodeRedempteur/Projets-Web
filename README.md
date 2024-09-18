@@ -6,7 +6,7 @@ Bienvenue dans cette collection de projets de développement web conçus pour le
 
 ## 🎥 Découvrir les tutoriels vidéo
 
-Des vidéos explicatives sont disponibles sur [YouTube]([[https://www.youtube.com/playlist?list=PLwxzgoKfBuLF9G4Lkz2hkTJdSK1J7S7Yr](https://www.youtube.com/playlist?list=PLwxzgoKfBuLEY3DN0Fl82NEQRASQmzjfX)](https://www.youtube.com/@CodeRedempteur)). Regardez-les pour en savoir plus sur la mise en œuvre des projets et obtenir des démonstrations détaillées.
+Des vidéos explicatives sont disponibles sur [YouTube]([https://www.youtube.com/playlist?list=PLwxzgoKfBuLF9G4Lkz2hkTJdSK1J7S7Yr](https://www.youtube.com/playlist?list=PLwxzgoKfBuLEY3DN0Fl82NEQRASQmzjfX)](https://www.youtube.com/@CodeRedempteur). Regardez-les pour en savoir plus sur la mise en œuvre des projets et obtenir des démonstrations détaillées.
 
 ## 🚀 Comment utiliser ces fichiers ?
 
