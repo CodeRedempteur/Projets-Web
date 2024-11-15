@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    height: 100vh;
+}
+
+#map{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.search-container{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 80%;
+    max-width: 500px;
+}
+
+
+.search-box{
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    font-size: 16px;
+    outline: none;
+}
+
+.results-container{
+    position:absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 8px;
+    box-shadow: 0 2px 6p rgba(0,0,0,0.3);
+    margin-top: 8px;
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+
+}
+
+.result-item{
+    padding:10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item:hover{
+    background-color: #f5f5f5;
+}
+
+
+
+
+.add-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #2196F3;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #1976D2;
+}
+
+
+.dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+.dialog-overlay[style*="display: flex"] {
+    display: flex !important;
+}
+
+.dialog {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative; 
+}
+
+.address-search-container {
+    position: relative; 
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.address-results {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    display: none;
+    z-index: 2001;
+}
+
+.dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dialog-buttons button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #ddd;
+}
+
+.save-button {
+    background-color: #2196F3;
+    color: white;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recherche Carte OpenStreetMap</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Rechercher un lieu...">
+                <div class="results-container"></div>
+            </div>
+            <button class="add-button">+</button>
+            <div class="dialog-overlay">
+                <div class="dialog">
+                    <h2>Ajouter un point d'intérêt</h2>
+                    <form id="position-form">
+                        <div class=" form-group address-search-container">
+                            <label for="address">Adress</label>
+                            <input type="text" id="address" required>
+                            <div class="address-results"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Nom du lieu</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Nom de la description</label>
+                            <input type="text" id="description" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <input type="hidden" id="latitude">
+                        <input type="hidden" id="longitude">
+                        <div class="dialog-buttons">
+                            <button type="button" class="cancel-button">Annuler</button>
+                            <button type="submit" class="save-button">Enregister</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
