@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Drag & Drop - Stockage de Produits</title>
+    
+</head>
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+<body>
+    <h1>Système de Stockage par Drag & Drop</h1>
+    
+    <div class="container">
+        <div class="products-container">
+            <h2 class="section-title">Produits Disponibles</h2>
+
+            <div class="products" id="products">
+
+                <div class="product" draggable="true" data-id="1" data-name="Ordinateur">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_1280.jpg" alt="Ordinateur">
+                    <div class="product-name">Ordinateur</div>
+                </div>
+                <div class="product" draggable="true" data-id="2" data-name="Téléphone">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/09/11/33/smartphone-1894723_640.jpg" alt="Téléphone">
+                    <div class="product-name">Téléphone</div>
+                </div>
+                <div class="product" draggable="true" data-id="3" data-name="Tablette">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/13/58/ipad-147691_640.png" alt="Tablette">
+                    <div class="product-name">Tablette</div>
+                </div>
+                <div class="product" draggable="true" data-id="4" data-name="Écouteurs">
+                    <img src="https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_640.jpg" alt="Écouteurs">
+                    <div class="product-name">Écouteurs</div>
+                </div>
+                <div class="product" draggable="true" data-id="5" data-name="Clavier">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/19/43/keyboard-1283938_640.jpg" alt="Clavier">
+                    <div class="product-name">Clavier</div>
+                </div>
+                <div class="product" draggable="true" data-id="6" data-name="Souris">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/17/41/computer-mouse-152249_640.png" alt="Souris">
+                    <div class="product-name">Souris</div>
+                </div>
+                <div class="product" draggable="true" data-id="7" data-name="Moniteur">
+                    <img src="https://cdn.eizo.ch/fileadmin/_processed_/2/4/csm_EV2460-BK_stage_628ee80f66.jpg" alt="Moniteur">
+                    <div class="product-name">Moniteur</div>
+                </div>
+                <div class="product" draggable="true" data-id="8" data-name="Imprimante">
+                    <img src="https://cdn.pixabay.com/photo/2020/05/14/02/07/office-5169618_1280.jpg" alt="Imprimante">
+                    <div class="product-name">Imprimante</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="storage-container">
+            <h2 class="section-title">Zone de Stockage</h2>
+            <div class="storage-items" id="storage">
+            </div>
+            <div class="storage-info">
+                Produits en stock: <span class="product-count" id="product-count">0</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
